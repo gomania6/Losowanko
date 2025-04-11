@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return false;">
+        <input type="text" name="players" placeholder="Wpisz graczy oddzielonych przez spacje" required>
+
+        <div class="wrapper">
+        <div class="checkbox">
+            <input id="map1" type="checkbox" name="map1" value="dust2">
+            <label for="map1">
+            <img src='https://static.wikia.nocookie.net/counterstrike/images/b/bf/Cs2dust2.jpg/revision/latest/scale-to-width-down/1000?cb=20230323193331&path-prefix=ru'/>
+            <span>Dust II</span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <input id="map2" type="checkbox" name="map2" value="mirage">
+            <label for="map2">
+            <img src='https://static.wikia.nocookie.net/counterstrike/images/1/12/Cs2mirage.jpg/revision/latest/scale-to-width-down/1000?cb=20230323194959&path-prefix=ru'/>
+            <span>Mirage</span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <input id="map3" type="checkbox" name="map3" value="vertigo">
+            <label for="map3">
+            <img src='https://static.wikia.nocookie.net/counterstrike/images/5/5a/Vertigo_cs2.webp/revision/latest?cb=20230718140911&path-prefix=ru'/>
+            <span>Vertigo</span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <input id="map4" type="checkbox" name="map4" value="ancient">
+            <label for="map4">
+            <img src='https://static.wikia.nocookie.net/counterstrike/images/6/6b/Cs2ancient.jpg/revision/latest/scale-to-width-down/1000?cb=20230323195311&path-prefix=ru'/>
+            <span>Ancient</span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <input id="map5" type="checkbox" name="map5" value="inferno">
+            <label for="map5">
+            <img src='https://static.wikia.nocookie.net/counterstrike/images/2/26/CS2_Inferno_new_A_site.png/revision/latest?cb=20230906070943&path-prefix=ru'/>
+            <span>Inferno</span>
+            </label>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div class="checkbox">
+            <input id="map6" type="checkbox" name="map6" value="nuke">
+            <label for="map6">
+            <img src='https://static.wikia.nocookie.net/counterstrike/images/5/5e/Cs2nuke.jpg/revision/latest/scale-to-width-down/1000?cb=20230323193535&path-prefix=ru'/>
+            <span>Nuke</span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <input id="map7" type="checkbox" name="map7" value="anubis">
+            <label for="map7">
+            <img src='https://static.wikia.nocookie.net/counterstrike/images/5/58/Anubiscs2b.jpeg/revision/latest/scale-to-width-down/1000?cb=20230803065512&path-prefix=ru'/>
+            <span>Anubis</span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <input id="map8" type="checkbox" name="map8" value="overpass">
+            <label for="map8">
+            <img src='https://static.wikia.nocookie.net/counterstrike/images/a/ad/Overpass_loading_screen.webp/revision/latest?cb=20230718074853&path-prefix=ru'/>
+            <span>Overpass</span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <input id="map9" type="checkbox" name="map9" value="office">
+            <label for="map9">
+            <img src='https://static.wikia.nocookie.net/counterstrike/images/6/64/Officecs2.webp/revision/latest?cb=20230706125548&path-prefix=ru'/>
+            <span>Office</span>
+            </label>
+        </div>
+        <div class="checkbox">
+            <input id="map10" type="checkbox" name="map10" value="italy">
+            <label for="map10">
+            <img src='https://static.wikia.nocookie.net/counterstrike/images/f/f0/Cs2italy.png/revision/latest/scale-to-width-down/1000?cb=20230323161041&path-prefix=ru'/>
+            <span>Italy</span>
+            </label>
+        </div>
+        </div>
+        <div class="wrapper">
+        <div class="checkbox">
+            <input id="map11" type="checkbox" name="map11" value="train">
+            <label for="map11">
+            <img src='https://staticg.sportskeeda.com/editor/2024/11/aefbd-17315900441253-1920.jpg'/>
+            <span>Train</span>
+            </label>
+        </div>
+        <div>
+        <button type="submit">Losuj</button>
+    </div>
+    </div>
+    </form>
+    <div class="result">
+        <div class="players-ct">
+            <h2>Gracze CT</h2>
+            <ul id="players">
+                <li id="players-list">
+                    <!-- Dynamic content will be inserted here -->
+                </li>
+            </ul>
+        </div>
+        <div class="maps">
+            <h2>Wylosowana mapa</h2>
+            <ul id="maps">
+                <!-- Dynamic content will be inserted here -->
+            </ul>
+        </div>
+        <div class="players-t">
+            <h2>Gracze T</h2>
+            <ul id="players">
+                <li id="players-list">
+                    <!-- Dynamic content will be inserted here -->
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+<script src="script.js"></script>
+
+<!--
+    <div class="result">
+        <div class="players-ct">
+            <h2>Gracze CT</h2>
+            <ul id="players">
+                <li id="players-list">
+                    <h2>Player <img src="img/crown.png"></h2>
+                    <h2>Player2</h2>
+                    <h2>Player3</h2>
+                    <h2>Player4</h2>
+                    <h2>Player5</h2>
+                </li>
+            </ul>
+
+        </div>
+        <div class="maps">
+            <h2>Wylosowana mapa</h2>
+            <ul id="maps">
+                <h1>Train</h1>
+                <img src='https://staticg.sportskeeda.com/editor/2024/11/aefbd-17315900441253-1920.jpg'/>
+            </ul>
+        </div>
+        <div class="players-t">
+            <h2>Gracze T</h2>
+            <ul id="players">
+                <li id="players-list">
+                    <h2>Player <img src="img/crown.png"></h2>
+                    <h2>Player2</h2>
+                    <h2>Player3</h2>
+                    <h2>Player4</h2>
+                    <h2>Player5</h2>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+-->
